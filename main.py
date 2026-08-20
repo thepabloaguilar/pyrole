@@ -33,6 +33,9 @@ def render_pybr26():
     html = jinja_env.get_template('index.html').render(information=information)
     build_folder.joinpath('index.html').write_text(html)
 
+    static_files = current_dir / 'static'
+    shutil.copytree(static_files, build_folder, dirs_exist_ok=True)
+
 
 if __name__ == "__main__":
     render_pybr26()
