@@ -192,8 +192,9 @@
   class="docked full-width top-0 z-50 bg-background dark:bg-deep-black border-b-2 border-primary-fixed flat-no-shadows">
   <div
     class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-    <a class="font-display-lg text-headline-lg-mobile text-primary-fixed uppercase tracking-tighter" href="#">Pyrolê
-      - PYBR26</a>
+    <a class="font-display-lg text-headline-lg-mobile text-primary-fixed uppercase tracking-tighter" href="#">
+      Pyrolê - PYBR26
+    </a>
     <div class="hidden md:flex items-center gap-6">
       <a
         class="bg-primary-fixed text-deep-black font-label-caps text-label-caps px-4 py-2 hover:bg-surface-container-highest hover:text-primary-fixed border border-primary-fixed transition-all duration-200 active:scale-95 uppercase tracking-widest"
@@ -264,7 +265,7 @@
         <div class="flex items-center gap-4 mb-4">
                     <span class="material-symbols-outlined text-primary-fixed text-4xl"
                           style="font-variation-settings: 'FILL' 1;">calendar_month</span>
-          <h2 class="font-headline-lg text-headline-lg-mobile text-primary uppercase">Programação</h2>
+          <h2 id="schedule" class="font-headline-lg text-headline-lg-mobile text-primary uppercase">Programação</h2>
         </div>
         {% for hangout in information.hangouts %}
         <div class="mb-6">
@@ -333,21 +334,9 @@
   </a>
   <a
     class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary-fixed transition-colors active:scale-90 transition-transform font-label-caps text-label-caps"
-    href="#">
+    href="#schedule">
     <span class="material-symbols-outlined">calendar_month</span>
     <span class="">Programação</span>
-  </a>
-  <a
-    class="flex flex-col items-center justify-center bg-primary-fixed text-on-primary-fixed rounded-full p-2 active:scale-90 transition-transform font-label-caps text-label-caps"
-    href="#">
-    <span class="material-symbols-outlined">local_bar</span>
-    <span class="">Locais</span>
-  </a>
-  <a
-    class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary-fixed transition-colors active:scale-90 transition-transform font-label-caps text-label-caps"
-    href="#">
-    <span class="material-symbols-outlined">person</span>
-    <span class="">Perfil</span>
   </a>
 </nav>
 <!-- Footer -->
