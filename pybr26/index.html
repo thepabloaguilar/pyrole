@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR" style="">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="robots" content="noindex">
+  <title>Pyrolê Python Brasil 2026</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chivo:wght@800;900&amp;family=Inter:wght@400;450&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error-container": "#93000a",
+            "inverse-surface": "#e2e4cf",
+            "dark-gray": "#1A1A1A",
+            "on-primary-container": "#556d00",
+            "surface-container-low": "#1a1d10",
+            "secondary-container": "#454747",
+            "electric-lime-muted": "#A3CC00",
+            "surface-variant": "#333627",
+            "surface-container-lowest": "#0c0f04",
+            "outline-variant": "#444933",
+            "surface-container-high": "#282b1d",
+            "secondary-fixed-dim": "#c6c6c7",
+            "on-tertiary-fixed": "#0b1d29",
+            "on-tertiary-fixed-variant": "#374956",
+            "error": "#ffb4ab",
+            "primary-fixed-dim": "#abd600",
+            "on-primary": "#283500",
+            "on-surface-variant": "#c4c9ac",
+            "on-primary-fixed-variant": "#3c4d00",
+            "on-primary-fixed": "#161e00",
+            "on-error-container": "#ffdad6",
+            "surface": "#111508",
+            "primary-fixed": "#c3f400",
+            "on-secondary-fixed": "#1a1c1c",
+            "tertiary-fixed-dim": "#b6c9d8",
+            "inverse-primary": "#506600",
+            "surface-container-highest": "#333627",
+            "secondary": "#c6c6c7",
+            "tertiary-fixed": "#d2e5f5",
+            "surface-container": "#1e2113",
+            "on-background": "#e2e4cf",
+            "secondary-fixed": "#e2e2e2",
+            "outline": "#8e9379",
+            "primary-container": "#c3f400",
+            "primary": "#ffffff",
+            "deep-black": "#000000",
+            "surface-tint": "#abd600",
+            "on-tertiary-container": "#556774",
+            "on-tertiary": "#21323e",
+            "inverse-on-surface": "#2f3223",
+            "surface-bright": "#373b2c",
+            "tertiary": "#ffffff",
+            "on-secondary": "#2f3131",
+            "on-surface": "#e2e4cf",
+            "background": "#111508",
+            "on-secondary-container": "#b4b5b5",
+            "tertiary-container": "#d2e5f5",
+            "on-secondary-fixed-variant": "#454747",
+            "surface-dim": "#111508",
+            "on-error": "#690005"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "container-max": "1280px",
+            "unit": "4px",
+            "margin-mobile": "16px",
+            "margin-desktop": "64px",
+            "gutter": "24px"
+          },
+          "fontFamily": {
+            "label-caps": [
+              "JetBrains Mono"
+            ],
+            "code-sm": [
+              "JetBrains Mono"
+            ],
+            "body-md": [
+              "Inter"
+            ],
+            "display-lg": [
+              "Chivo"
+            ],
+            "headline-lg-mobile": [
+              "Chivo"
+            ],
+            "body-lg": [
+              "Inter"
+            ],
+            "headline-lg": [
+              "Chivo"
+            ]
+          },
+          "fontSize": {
+            "label-caps": [
+              "12px",
+              {
+                "lineHeight": "16px",
+                "fontWeight": "700"
+              }
+            ],
+            "code-sm": [
+              "14px",
+              {
+                "lineHeight": "20px",
+                "fontWeight": "500"
+              }
+            ],
+            "body-md": [
+              "16px",
+              {
+                "lineHeight": "24px",
+                "fontWeight": "400"
+              }
+            ],
+            "display-lg": [
+              "72px",
+              {
+                "lineHeight": "80px",
+                "letterSpacing": "-0.04em",
+                "fontWeight": "900"
+              }
+            ],
+            "headline-lg-mobile": [
+              "32px",
+              {
+                "lineHeight": "40px",
+                "fontWeight": "800"
+              }
+            ],
+            "body-lg": [
+              "18px",
+              {
+                "lineHeight": "28px",
+                "fontWeight": "450"
+              }
+            ],
+            "headline-lg": [
+              "48px",
+              {
+                "lineHeight": "56px",
+                "letterSpacing": "-0.02em",
+                "fontWeight": "800"
+              }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .pixel-dither {
+      background-image: radial-gradient(#c3f400 1px, transparent 1px);
+      background-size: 8px 8px;
+      opacity: 0.1;
+    }
+
+    .hard-shadow {
+      box-shadow: 4px 4px 0px 0px #c3f400;
+    }
+
+    .hard-shadow-dark {
+      box-shadow: 4px 4px 0px 0px #1A1A1A;
+    }
+
+    .glass-panel {
+      background: rgba(26, 26, 26, 0.7);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid #333333;
+    }
+  </style>
+</head>
+<body
+  class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-deep-black">
+<!-- TopNavBar -->
+<nav
+  class="docked full-width top-0 z-50 bg-background dark:bg-deep-black border-b-2 border-primary-fixed flat-no-shadows">
+  <div
+    class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+    <a class="font-display-lg text-headline-lg-mobile text-primary-fixed uppercase tracking-tighter" href="#">Pyrolê
+      - PYBR26</a>
+    <div class="hidden md:flex items-center gap-6">
+      <a
+        class="bg-primary-fixed text-deep-black font-label-caps text-label-caps px-4 py-2 hover:bg-surface-container-highest hover:text-primary-fixed border border-primary-fixed transition-all duration-200 active:scale-95 uppercase tracking-widest"
+        href="https://2026.pythonbrasil.org.br">
+        Site Oficial
+      </a>
+    </div>
+  </div>
+</nav>
+<main class="flex-grow flex flex-col relative">
+  <!-- Hero Section -->
+  <section
+    class="relative w-full h-[60vh] min-h-[450px] flex items-center justify-center overflow-hidden border-b-2 border-primary-fixed">
+    <div class="absolute inset-0 z-0">
+      <img alt="Hero Image" class="w-full h-full object-cover opacity-40 mix-blend-luminosity"
+           src="https://lh3.googleusercontent.com/aida/AEtjO1Xap2kzaaC7UmpE4HBWSljhfs83A85FQs80vXwBBzipMR2iPuihyQ3Vjy1fhe2Y5BxzSiySfs6Fu3fho-E2-fj30sRF77ZYNwbeHHipX4Z6GHBrK0d3rINylf0zlGameHgo2kzTRpUUmN3XagKT4PnZhqqp12b1yudP7u-d-xnNNVcL0RsXNdE9viL7Plq-YBvGbEqVWOxUB2J3k00pVpJrzOVFCZl74erpeWY9B-mnTdSajqUjIAajmRc">
+      <div class="absolute inset-0 bg-gradient-to-t from-deep-black to-transparent"></div>
+      <div class="absolute inset-0 pixel-dither"></div>
+    </div>
+    <div
+      class="relative z-10 w-full max-w-container-max px-margin-mobile md:px-margin-desktop text-center flex flex-col items-center">
+      <div class="inline-block border-2 border-primary-fixed px-4 py-1 mb-6 bg-deep-black/80 backdrop-blur-sm">
+        <span class="font-label-caps text-label-caps text-primary-fixed uppercase tracking-[0.2em]">Guia Oficial do "onde vai ser hoje?"</span>
+      </div>
+      <h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary uppercase leading-none mb-6">
+        Onde a <span class="text-primary-fixed">Comunidade</span><br>Se Encontra
+      </h1>
+      <p
+        class="font-body-lg text-body-lg text-secondary-fixed-dim max-w-2xl mx-auto border-l-4 border-primary-fixed pl-4 text-left mb-8">
+        A programação oficial dos bares após os tutoriais e palestras em Floripa. Amizade, conversa, diversão,
+        karaokê e bingo.
+      </p>
+      <p
+        class="font-code-sm text-code-sm text-primary-fixed/60 mt-4 text-left max-w-2xl mx-auto pl-4 uppercase tracking-wider mb-8">
+        * Iniciativa independente da comunidade, sem vínculo oficial com a organização do evento.</p>
+      <a
+        class="inline-flex items-center gap-2 bg-primary-fixed text-deep-black font-label-caps text-label-caps px-6 py-3 hover:bg-surface-container-highest hover:text-primary-fixed border border-primary-fixed transition-all duration-200 active:scale-95 uppercase tracking-widest"
+        href="https://t.me/pybr2026">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.892-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path>
+        </svg>
+        Entrar no Grupo do Telegram
+      </a>
+    </div>
+  </section>
+  <!-- Content Grid Section -->
+  <section class="relative w-full py-16 md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+    <div class="flex flex-col gap-16 relative z-10">
+      <!-- Top Row: Community Image & Intro -->
+      <div class="grid grid-cols-1 gap-8 items-center w-full">
+
+        <div class="bg-surface-container-low p-6 border-l-2 border-primary-fixed max-w-3xl mx-auto">
+          <h2 class="font-headline-lg text-headline-lg-mobile text-primary mb-4 uppercase">Sobre o Pyrolê</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-4">O Pyrolê é um espaço social e
+            inclusivo para todos (quem bebe e quem não bebe), onde as conexões reais acontecem fora das
+            salas de conferência e a comunidade celebra junta.</p>
+          <ul class="font-code-sm text-code-sm text-primary-fixed flex flex-col gap-2">
+            <li class="">&gt; Respeite as pessoas.</li>
+            <li class=""><a class="hover:underline"
+                            href="https://ericholscher.com/blog/2017/aug/2/pacman-rule-conferences/"
+                            target="_blank">&gt; Conheça a Regra do Pac-Man (inclusividade)</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Full Width Column: Schedule List -->
+      <div class="w-full flex flex-col gap-6">
+        <div class="flex items-center gap-4 mb-4">
+                    <span class="material-symbols-outlined text-primary-fixed text-4xl"
+                          style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+          <h2 class="font-headline-lg text-headline-lg-mobile text-primary uppercase">Programação</h2>
+        </div>
+        {% for hangout in information.hangouts %}
+        <div class="mb-6">
+          <div class="inline-block border-b-2 border-primary-fixed pb-1 mb-4">
+            <h3 class="font-headline-lg text-2xl text-primary-fixed uppercase tracking-wide">Dia {{ hangout.date.day
+              }}</h3>
+          </div>
+          <div class="flex flex-col gap-4">
+            {% for place in hangout.places %}
+            <div
+              class="glass-panel p-6 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 group hover:border-primary-fixed transition-colors relative overflow-hidden">
+              <div
+                class="absolute left-0 top-0 bottom-0 w-1 bg-[#333333] group-hover:bg-primary-fixed transition-colors"></div>
+              <div class="flex-grow pl-4">
+                <div class="flex items-center gap-3 mb-2"><span
+                  class="font-label-caps text-label-caps bg-surface-container-high text-on-surface px-2 py-1 uppercase border border-[#333333]">{{ place.tag }}</span>
+                  <div class="flex items-center">
+                    <h4 class="font-body-lg text-body-lg text-primary font-bold">{{ place.name }}</h4>
+                  </div>
+                  <!--                  <span class="font-code-sm text-code-sm text-secondary-fixed-dim">(Centro)</span>-->
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
+                  <span
+                    class="material-symbols-outlined text-primary-fixed text-sm">{{ place.description_symbol }}</span>
+                  {{ place.description }}
+                </p>
+              </div>
+              <div class="flex flex-col sm:flex-row gap-2 w-full lg:w-auto">
+                <a
+                  class="flex-grow sm:flex-grow-0 border border-primary-fixed text-primary-fixed bg-transparent px-3 py-1.5 font-label-caps text-[10px] hover:bg-primary-fixed/10 transition-all active:scale-95 flex items-center justify-center gap-1 uppercase tracking-wide"
+                  href="{{ place.google_maps_url }}">
+                  <span class="material-symbols-outlined text-sm">map</span> Ver no Mapa
+                </a>
+                <button
+                  class="flex-grow sm:flex-grow-0 border border-primary-fixed text-primary-fixed bg-transparent px-3 py-1.5 font-label-caps text-[10px] hover:bg-primary-fixed/10 transition-all active:scale-95 flex items-center justify-center gap-1 uppercase tracking-wide"
+                  data-address="{{ place.location.address }}"
+                  onclick="copyAddress(this)">
+                  <span class="material-symbols-outlined text-sm">content_copy</span> Copiar Endereço
+                </button>
+                <a
+                  class="flex-grow sm:flex-grow-0 bg-primary-fixed text-deep-black font-label-caps text-label-caps px-4 py-2 hover:bg-white transition-all flex items-center justify-center gap-2 uppercase tracking-wide active:scale-95"
+                  href="{{ place.uber_deeplink }}">
+                  <span class="material-symbols-outlined text-lg">local_taxi</span> Pedir Uber
+                </a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- BottomNavBar (Mobile Only) -->
+<nav
+  class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 md:hidden bg-surface-container-lowest dark:bg-deep-black border-t-2 border-primary-fixed shadow-[0_-4px_10px_rgba(195,244,0,0.2)]">
+  <a
+    class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary-fixed transition-colors active:scale-90 transition-transform font-label-caps text-label-caps"
+    href="#">
+    <span class="material-symbols-outlined">home</span>
+    <span class="">Home</span>
+  </a>
+  <a
+    class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary-fixed transition-colors active:scale-90 transition-transform font-label-caps text-label-caps"
+    href="#">
+    <span class="material-symbols-outlined">calendar_month</span>
+    <span class="">Programação</span>
+  </a>
+  <a
+    class="flex flex-col items-center justify-center bg-primary-fixed text-on-primary-fixed rounded-full p-2 active:scale-90 transition-transform font-label-caps text-label-caps"
+    href="#">
+    <span class="material-symbols-outlined">local_bar</span>
+    <span class="">Locais</span>
+  </a>
+  <a
+    class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary-fixed transition-colors active:scale-90 transition-transform font-label-caps text-label-caps"
+    href="#">
+    <span class="material-symbols-outlined">person</span>
+    <span class="">Perfil</span>
+  </a>
+</nav>
+<!-- Footer -->
+<footer
+  class="w-full py-8 px-margin-mobile md:px-margin-desktop mt-auto flex flex-col md:flex-row justify-between items-center gap-4 bg-surface-container-low dark:bg-deep-black border-t border-outline-variant flat pb-24 md:pb-8">
+  <div class="text-center md:text-left">
+    <span class="font-headline-lg text-primary-fixed block mb-2 text-2xl">Pyrolê - PYBR26</span>
+    <span
+      class="font-code-sm text-code-sm text-secondary-fixed">© 2026 Pyrolê - Florianópolis. Feito com Python e Café.</span>
+  </div>
+</footer>
+
+<script>
+  function copyAddress(btn) {
+    const address = btn.dataset.address;
+    navigator.clipboard.writeText(address).then(() => {
+      const original = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span> Copiado!';
+      setTimeout(() => {
+        btn.innerHTML = original;
+      }, 1500);
+    });
+  }
+</script>
+</body>
+</html>
