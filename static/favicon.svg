@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+    <defs>
+        <!-- Glow filter for neon effect -->
+        <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="8" result="blur" />
+            <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+
+        <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#111508" />
+            <stop offset="100%" stop-color="#0c0f04" />
+        </linearGradient>
+
+        <linearGradient id="neon-lime" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#d9ff33" />
+            <stop offset="100%" stop-color="#ccff00" />
+        </linearGradient>
+    </defs>
+
+    <!-- Dark Background Rounded Container -->
+    <rect width="512" height="512" rx="112" fill="url(#bg-grad)" />
+    <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#ccff00" stroke-width="8" stroke-opacity="0.25" />
+
+    <!-- Python Serpent / Glass / Moon stylized glyph -->
+    <!-- Upper snake head/loop (Python yellow/lime) -->
+    <path d="M256 70 C190 70 148 108 148 166 L148 206 C148 226 164 242 184 242 L266 242 C286 242 302 258 302 278 L302 314 C302 344 326 368 356 368 C386 368 410 344 410 314 L410 206 C410 120 342 70 256 70 Z M216 130 C226 130 234 138 234 148 C234 158 226 166 216 166 C206 166 198 158 198 148 C198 138 206 130 216 130 Z"
+          fill="#ccff00"
+          filter="url(#neon-glow)" />
+
+    <!-- Lower snake loop / Night vibe (Purple / Deep Violet neon) -->
+    <path d="M256 442 C322 442 364 404 364 346 L364 306 C364 286 348 270 328 270 L246 270 C226 270 210 254 210 234 L210 198 C210 168 186 144 156 144 C126 144 102 168 102 198 L102 306 C102 392 170 442 256 442 Z M296 382 C286 382 278 374 278 364 C278 354 286 346 296 346 C306 346 314 354 314 364 C314 374 306 382 296 382 Z"
+          fill="#a855f7"
+          filter="url(#neon-glow)" />
+
+    <!-- Sparkling / Star accent in top right (nightlife / celebration) -->
+    <path d="M390 100 Q390 125 415 125 Q390 125 390 150 Q390 125 365 125 Q390 125 390 100 Z" fill="#ccff00" />
+</svg>

@@ -184,6 +184,8 @@
       border: 1px solid #333333;
     }
   </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
 </head>
 <body
   class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-deep-black">
@@ -207,10 +209,10 @@
 <main class="flex-grow flex flex-col relative">
   <!-- Hero Section -->
   <section
-    class="relative w-full h-[60vh] min-h-[450px] flex items-center justify-center overflow-hidden border-b-2 border-primary-fixed">
+    class="relative w-full min-h-[450px] flex items-center justify-center border-b-2 border-primary-fixed pt-24 pb-16 md:py-24 overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <img alt="Hero Image" class="w-full h-full object-cover opacity-40 mix-blend-luminosity"
-           src="https://lh3.googleusercontent.com/aida/AEtjO1Xap2kzaaC7UmpE4HBWSljhfs83A85FQs80vXwBBzipMR2iPuihyQ3Vjy1fhe2Y5BxzSiySfs6Fu3fho-E2-fj30sRF77ZYNwbeHHipX4Z6GHBrK0d3rINylf0zlGameHgo2kzTRpUUmN3XagKT4PnZhqqp12b1yudP7u-d-xnNNVcL0RsXNdE9viL7Plq-YBvGbEqVWOxUB2J3k00pVpJrzOVFCZl74erpeWY9B-mnTdSajqUjIAajmRc">
+      <img alt="Noite em Florianópolis com ponte iluminada e reflexos neon"
+           class="w-full h-full object-cover opacity-45 mix-blend-luminosity" src="images/hero.jpg">
       <div class="absolute inset-0 bg-gradient-to-t from-deep-black to-transparent"></div>
       <div class="absolute inset-0 pixel-dither"></div>
     </div>
@@ -223,17 +225,17 @@
         Onde a <span class="text-primary-fixed">Comunidade</span><br>Se Encontra
       </h1>
       <p
-        class="font-body-lg text-body-lg text-secondary-fixed-dim max-w-2xl mx-auto border-l-4 border-primary-fixed pl-4 text-left mb-8">
+        class="font-body-lg text-body-lg text-secondary-fixed-dim max-w-2xl mx-auto border-l-4 border-primary-fixed pl-4 text-left mb-4">
         A programação oficial dos bares após os tutoriais e palestras em Floripa. Amizade, conversa, diversão,
         karaokê e bingo.
       </p>
       <p
-        class="font-code-sm text-code-sm text-primary-fixed/60 mt-4 text-left max-w-2xl mx-auto pl-4 uppercase tracking-wider mb-8">
+        class="font-code-sm text-code-sm text-primary-fixed/60 mt-2 text-left max-w-2xl mx-auto pl-4 uppercase tracking-wider mb-6">
         * Iniciativa independente da comunidade, sem vínculo oficial com a organização do evento.</p>
       <a
-        class="inline-flex items-center gap-2 bg-primary-fixed text-deep-black font-label-caps text-label-caps px-6 py-3 hover:bg-surface-container-highest hover:text-primary-fixed border border-primary-fixed transition-all duration-200 active:scale-95 uppercase tracking-widest"
+        class="relative z-10 flex-shrink-0 inline-flex items-center gap-2 bg-primary-fixed text-deep-black font-label-caps text-label-caps px-6 py-3 hover:bg-surface-container-highest hover:text-primary-fixed border border-primary-fixed transition-all duration-200 active:scale-95 uppercase tracking-widest mt-2 mb-2"
         href="https://t.me/pybr2026">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.892-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path>
         </svg>
@@ -245,18 +247,30 @@
   <section class="relative w-full py-16 md:py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
     <div class="flex flex-col gap-16 relative z-10">
       <!-- Top Row: Community Image & Intro -->
-      <div class="grid grid-cols-1 gap-8 items-center w-full">
-
-        <div class="bg-surface-container-low p-6 border-l-2 border-primary-fixed max-w-3xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full max-w-container-max mx-auto">
+        <div class="relative group overflow-hidden border-2 border-primary-fixed bg-surface-container-lowest">
+          <img src="images/bebidas.jpg"
+            alt="Variedade inclusiva de bebidas: água com gás, refrigerante, suco tropical, coquetel artesanal e cerveja artesanal"
+            class="w-full h-64 md:h-80 object-cover contrast-125 block">
+          <div class="absolute bottom-0 left-0 right-0 bg-deep-black/90 p-2 border-t border-primary-fixed">
+            <p class="font-code-sm text-code-sm text-primary-fixed text-center uppercase tracking-wider">&gt; BEBIDAS
+              PARA TODO MUNDO // FLORIPA 2026</p>
+          </div>
+        </div>
+        <div class="bg-surface-container-low p-6 border-l-2 border-primary-fixed h-full flex flex-col justify-center">
           <h2 class="font-headline-lg text-headline-lg-mobile text-primary mb-4 uppercase">Sobre o Pyrolê</h2>
-          <p class="font-body-md text-body-md text-on-surface-variant mb-4">O Pyrolê é um espaço social e
-            inclusivo para todos (quem bebe e quem não bebe), onde as conexões reais acontecem fora das
+          <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            O Pyrolê é um espaço social e inclusivo para todos (quem bebe e quem não bebe), onde as conexões reais
+            acontecem fora das
             salas de conferência e a comunidade celebra junta.</p>
           <ul class="font-code-sm text-code-sm text-primary-fixed flex flex-col gap-2">
             <li class="">&gt; Respeite as pessoas.</li>
-            <li class=""><a class="hover:underline"
-                            href="https://ericholscher.com/blog/2017/aug/2/pacman-rule-conferences/"
-                            target="_blank">&gt; Conheça a Regra do Pac-Man (inclusividade)</a></li>
+            <li class="">
+              <a class="hover:underline" href="https://ericholscher.com/blog/2017/aug/2/pacman-rule-conferences/"
+                 target="_blank">
+                &gt; Conheça a Regra do Pac-Man (inclusividade)
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -270,8 +284,9 @@
         {% for hangout in information.hangouts %}
         <div class="mb-6">
           <div class="inline-block border-b-2 border-primary-fixed pb-1 mb-4">
-            <h3 class="font-headline-lg text-2xl text-primary-fixed uppercase tracking-wide">Dia {{ hangout.date.day
-              }}</h3>
+            <h3 class="font-headline-lg text-2xl text-primary-fixed uppercase tracking-wide">
+              Dia {{ hangout.date.day }}
+            </h3>
           </div>
           <div class="flex flex-col gap-4">
             {% for place in hangout.places %}
@@ -280,12 +295,16 @@
               <div
                 class="absolute left-0 top-0 bottom-0 w-1 bg-[#333333] group-hover:bg-primary-fixed transition-colors"></div>
               <div class="flex-grow pl-4">
-                <div class="flex items-center gap-3 mb-2"><span
-                  class="font-label-caps text-label-caps bg-surface-container-high text-on-surface px-2 py-1 uppercase border border-[#333333]">{{ place.tag }}</span>
+                <div class="flex items-center gap-3 mb-2">
+                  <span
+                    class="font-label-caps text-label-caps bg-surface-container-high text-on-surface px-2 py-1 uppercase border border-[#333333]">
+                    {{ place.tag }}
+                  </span>
                   <div class="flex items-center">
-                    <h4 class="font-body-lg text-body-lg text-primary font-bold">{{ place.name }}</h4>
+                    <h4 class="font-body-lg text-body-lg text-primary font-bold">
+                      {{ place.name }}
+                    </h4>
                   </div>
-                  <!--                  <span class="font-code-sm text-code-sm text-secondary-fixed-dim">(Centro)</span>-->
                 </div>
                 <p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
                   <span
