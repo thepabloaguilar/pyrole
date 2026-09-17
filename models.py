@@ -32,6 +32,7 @@ class Place:
     name: str
     description: str
     description_symbol: str
+    food_options: FoodOptions
     location: Location
     google_maps_url: str
 
@@ -54,9 +55,27 @@ class Place:
 
         return f'{_BASE_UBER_DEEPLINK_URL}?{encoded_params}'
 
+    @computed_field
+    def food_options_str(self) -> str:
+        options = []
+        if self.food_options.traditional:
+            options.append('Tradicional')
+        if self.food_options.vegetarian:
+            options.append('Vegetariano')
+        if self.food_options.vegan:
+            options.append('Vegano')
+        return ', '.join(options)
+
 
 @dataclass(frozen=True)
 class Location:
     address: str
     latitude: float
     longitude: float
+
+
+@dataclass(frozen=True)
+class FoodOptions:
+    traditional: bool
+    vegetarian: bool
+    vegan: bool

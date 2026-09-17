@@ -8,6 +8,11 @@
           "name": "Giro Floripa",
           "description": "O BINGO acontece aqui",
           "description_symbol": "local_bar",
+          "food_options": {
+            "traditional": true,
+            "vegetarian": true,
+            "vegan": true
+          },
           "location": {
             "address": "R. Me. Maria Villac, Vilac, 1773 - Canasvieiras, Florianópolis - SC, 88054-001",
             "latitude": -27.428418778752356,

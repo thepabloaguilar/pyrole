@@ -250,8 +250,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full max-w-container-max mx-auto">
         <div class="relative group overflow-hidden border-2 border-primary-fixed bg-surface-container-lowest">
           <img src="images/bebidas.jpg"
-            alt="Variedade inclusiva de bebidas: água com gás, refrigerante, suco tropical, coquetel artesanal e cerveja artesanal"
-            class="w-full h-64 md:h-80 object-cover contrast-125 block">
+               alt="Variedade inclusiva de bebidas: água com gás, refrigerante, suco tropical, coquetel artesanal e cerveja artesanal"
+               class="w-full h-64 md:h-80 object-cover contrast-125 block">
           <div class="absolute bottom-0 left-0 right-0 bg-deep-black/90 p-2 border-t border-primary-fixed">
             <p class="font-code-sm text-code-sm text-primary-fixed text-center uppercase tracking-wider">&gt; BEBIDAS
               PARA TODO MUNDO // FLORIPA 2026</p>
@@ -277,9 +277,16 @@
       <!-- Full Width Column: Schedule List -->
       <div class="w-full flex flex-col gap-6">
         <div class="flex items-center gap-4 mb-4">
-                    <span class="material-symbols-outlined text-primary-fixed text-4xl"
-                          style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+            <span class="material-symbols-outlined text-primary-fixed text-4xl"
+                  style="font-variation-settings: 'FILL' 1;">calendar_month</span>
           <h2 id="schedule" class="font-headline-lg text-headline-lg-mobile text-primary uppercase">Programação</h2>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-3 md:gap-6 py-3 px-6 mb-10 bg-surface-container-low border border-outline-variant/30 rounded-lg text-xs font-mono">
+          <span class="text-primary-fixed font-bold uppercase tracking-widest flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-sm">restaurant</span> Inclusão Alimentar:</span>
+          <span class="inline-flex items-center gap-1.5 text-zinc-300 bg-zinc-800/60 px-2.5 py-1 rounded border border-zinc-700/40">🍔 Tradicional / Onívoro</span>
+          <span class="inline-flex items-center gap-1.5 text-amber-300 font-bold bg-amber-950/60 px-2.5 py-1 rounded border border-amber-500/30">🧀 Vegetariano</span>
+          <span class="inline-flex items-center gap-1.5 text-emerald-400 font-bold bg-emerald-950/60 px-2.5 py-1 rounded border border-emerald-500/30">🌱 Vegano</span>
         </div>
         {% for hangout in information.hangouts %}
         <div class="mb-6">
@@ -300,10 +307,15 @@
                     class="font-label-caps text-label-caps bg-surface-container-high text-on-surface px-2 py-1 uppercase border border-[#333333]">
                     {{ place.tag }}
                   </span>
-                  <div class="flex items-center">
+                  <div class="flex items-center flex-wrap gap-2">
                     <h4 class="font-body-lg text-body-lg text-primary font-bold">
                       {{ place.name }}
                     </h4>
+                    <span class="inline-flex items-center gap-1.5 ml-1 text-sm" title="Opções disponíveis: {{ place.food_options_str }}">
+                      {% if place.food_options.traditional %}<span title="Tradicional">🍔</span>{% endif %}
+                      {% if place.food_options.vegetarian %}<span title="Vegetariano">🧀</span>{% endif %}
+                      {% if place.food_options.vegan %}<span title="Vegano">🌱</span>{% endif %}
+                    </span>
                   </div>
                 </div>
                 <p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2">
