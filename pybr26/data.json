@@ -1,19 +1,19 @@
 {
   "hangouts": [
     {
-      "date": "16-10-2026",
+      "date": "15-10-2026",
       "places": [
         {
           "tag": "O Bar",
-          "name": "Bar TBD",
-          "description": "Bingo e Karaokê",
+          "name": "Giro Floripa",
+          "description": "O BINGO acontece aqui",
           "description_symbol": "local_bar",
           "location": {
-            "address": "R. do Marisco, 550 - Ingleses Centro, Florianópolis - SC, 88058-090",
-            "latitude": -27.432963380860606,
-            "longitude": -48.400079125101826
+            "address": "R. Me. Maria Villac, Vilac, 1773 - Canasvieiras, Florianópolis - SC, 88054-001",
+            "latitude": -27.428418778752356,
+            "longitude": -48.453656372039596
           },
-          "google_maps_url": "https://maps.app.goo.gl/2mmjDUhNyKmnktx96"
+          "google_maps_url": "https://maps.app.goo.gl/2dG1fz3MCnsyM1Dq8"
         }
       ]
     }
