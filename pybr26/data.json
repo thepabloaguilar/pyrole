@@ -127,6 +127,24 @@
             "longitude": -48.4039623
           },
           "google_maps_url": "https://maps.app.goo.gl/rrMVvmvKZG2R8UKZ8"
+        },
+        {
+          "tag": "Vila com várias opções de restaurante",
+          "name": "Vila Futuro Ingleses",
+          "description": "Atração especial das 19h as 20h",
+          "description_symbol": "local_bar",
+          "start_time": "18:00",
+          "food_options": {
+            "traditional": true,
+            "vegetarian": true,
+            "vegan": false
+          },
+          "location": {
+            "address": "Rua Luiz Elias Daux, 40 - Ingleses do Rio Vermelho, Florianópolis - SC, 88058-512",
+            "latitude": -27.4342484,
+            "longitude": -48.4039623
+          },
+          "google_maps_url": "https://maps.app.goo.gl/rrMVvmvKZG2R8UKZ8"
         }
       ]
     }
