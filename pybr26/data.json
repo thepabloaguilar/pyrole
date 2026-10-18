@@ -147,6 +147,29 @@
           "google_maps_url": "https://maps.app.goo.gl/rrMVvmvKZG2R8UKZ8"
         }
       ]
+    },
+    {
+      "date": "18-10-2026",
+      "places": [
+        {
+          "tag": "Samba",
+          "name": "Botequim Samba Clube - Bar Ingleses",
+          "description": "Samba, sinuca e diversão",
+          "description_symbol": "nightlife",
+          "start_time": "18:00",
+          "food_options": {
+            "traditional": true,
+            "vegetarian": true,
+            "vegan": true
+          },
+          "location": {
+            "address": "Rua das Gaivotas, 863 - Ingleses Norte, Florianópolis - SC, 88058-500",
+            "latitude": -27.43000363467442,
+            "longitude": -48.39723016946773
+          },
+          "google_maps_url": "https://maps.app.goo.gl/4XejsXSL7YZe6yRc6"
+        }
+      ]
     }
   ]
 }
