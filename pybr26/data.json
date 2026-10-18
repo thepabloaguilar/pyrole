@@ -168,6 +168,23 @@
             "longitude": -48.39723016946773
           },
           "google_maps_url": "https://maps.app.goo.gl/4XejsXSL7YZe6yRc6"
+        },
+        {
+          "tag": "O Choro Mulheril",
+          "name": "Associação Cultural Baiacu de Alguem",
+          "description": "Roda de choro",
+          "description_symbol": "music_note_2",
+          "food_options": {
+            "traditional": false,
+            "vegetarian": false,
+            "vegan": false
+          },
+          "location": {
+            "address": "Rua Padre Lourenço R. de Andrade, 650 - Santo Antonio de Lisboa, Florianópolis - SC, 88050-400",
+            "latitude": -27.506790832295664,
+            "longitude": -48.51882503463433
+          },
+          "google_maps_url": "https://maps.app.goo.gl/bv2HfSFQhRZXmjmr6"
         }
       ]
     }
