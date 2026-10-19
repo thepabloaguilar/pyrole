@@ -194,7 +194,7 @@
         {
           "tag": "Game",
           "name": "Chef on Play",
-          "description": "Comida e jogos de tabuleiro",
+          "description": "Comida e jogos de tabuleiro, fica atrás do Bem Bolado Lounge Bar",
           "description_symbol": "joystick",
           "start_time": "18:30",
           "food_options": {
@@ -203,7 +203,7 @@
             "vegan": true
           },
           "location": {
-            "address": "Fundos de frente para a pracinha - R. Juvêncio Costa, 39 - Trindade, Florianópolis - SC, 88080-701",
+            "address": "Rua kk, Praça Atílio ferreira, 07 - Trindade, Florianópolis - SC, 88080-701",
             "latitude": -27.587923456522017,
             "longitude": -48.52312761019008
           },
