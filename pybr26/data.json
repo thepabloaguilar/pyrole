@@ -187,6 +187,29 @@
           "google_maps_url": "https://maps.app.goo.gl/bv2HfSFQhRZXmjmr6"
         }
       ]
+    },
+    {
+      "date": "19-10-2026",
+      "places": [
+        {
+          "tag": "Game",
+          "name": "Chef on Play",
+          "description": "Comida e jogos de tabuleiro",
+          "description_symbol": "joystick",
+          "start_time": "18:30",
+          "food_options": {
+            "traditional": true,
+            "vegetarian": true,
+            "vegan": true
+          },
+          "location": {
+            "address": "Fundos de frente para a pracinha - R. Juvêncio Costa, 39 - Trindade, Florianópolis - SC, 88080-701",
+            "latitude": -27.587923456522017,
+            "longitude": -48.52312761019008
+          },
+          "google_maps_url": "https://maps.app.goo.gl/aenSAhod3H9FyzFN7"
+        }
+      ]
     }
   ]
 }
