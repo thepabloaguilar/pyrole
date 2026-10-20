@@ -210,6 +210,29 @@
           "google_maps_url": "https://maps.app.goo.gl/aenSAhod3H9FyzFN7"
         }
       ]
+    },
+    {
+      "date": "20-10-2026",
+      "places": [
+        {
+          "tag": "Barco",
+          "name": "Scuna Lady Manoela",
+          "description": "Passeio de 4h de barco saindo as 11h da manhã",
+          "description_symbol": "sailing",
+          "start_time": "11:00",
+          "food_options": {
+            "traditional": false,
+            "vegetarian": false,
+            "vegan": false
+          },
+          "location": {
+            "address": "Praça Renato Antônio de Souza Retiro da lagoa - Scuna Lady Manoela, Av. Pref. Acácio Garibaldi São Thiago - Lagoa da Conceição, Florianópolis - SC, 88062-446",
+            "latitude": -27.6087446280618,
+            "longitude": -48.44227162698618
+          },
+          "google_maps_url": "https://maps.app.goo.gl/62dEBvqcqpkvoNYH7"
+        }
+      ]
     }
   ]
 }
